@@ -13,3 +13,342 @@
  *= require_tree .
  *= require_self
  */
+body{
+	font-family: 'Roboto', sans-serif;
+	padding-top: 70px;
+}
+
+.orangeTxt,
+.active{
+	color: #fab702 !important;
+}
+
+.orangeBg{
+	background-color: #fab702;
+}
+
+.navbar-default{
+	background-color: #fff;
+}
+
+p.text{
+	color: #5e5e5e;
+}
+
+.navbar-nav>li>a{
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+	text-transform: uppercase;
+	transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+
+    padding: 25px 15px;
+}
+
+.navbar-brand{
+	font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 6px;
+    padding: 25px 15px;
+}
+
+.navbar-brand:before{
+	content: 'L';
+	color: #fab702;
+}
+
+ul.dropdown-menu {
+    width: 230px;
+    
+    border-radius: 0 !important;
+    padding: 10px 0;
+    
+
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    background: rgba(252, 252, 252, 0.98);
+	box-shadow: none !important;
+	border: none;
+	border-top: 2px solid #fab702;
+}
+
+.navbar-default .navbar-nav>.open>a, 
+.navbar-default .navbar-nav>.open>a:focus, 
+.navbar-default .navbar-nav>.open>a:hover{
+	background-color: transparent !important;
+}
+
+.dropdown-menu>li>a:focus, 
+.dropdown-menu>li>a:hover{
+	background-color: transparent !important;
+	color: #fab702;	
+}
+
+.dropdown-menu>li>a{
+	text-transform: uppercase;
+    font-weight: 500;
+}
+
+#slider{
+    max-height: 570px;
+    height: 400px;
+  	overflow: hidden;	
+    opacity: 0.8;
+    visibility: inherit;
+    background-color: black;
+    background-image: url("slider.png");
+    background-position: center bottom;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#slider h2{
+	position: relative;
+    z-index: 2000;
+    color: white;
+    top: 15%;
+    /* left: 50%; */
+    font-size: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+    border: 3px solid;
+    text-transform: uppercase;
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 0px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#slider h2>small{
+	font-size: 24px;
+    color: white;
+    font-weight: 700;
+    display: block;
+}
+
+#intro{
+	margin-top: -75px;
+	margin-bottom: 20px;
+}
+
+h4{
+	margin-top: 20px;
+	margin-bottom: 15px;
+
+	color: #5e5e5e;
+}
+
+#intro p{
+	color: #5e5e5e;
+}
+
+#intro img{
+	-webkit-box-shadow: 0 0 2px 1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 0 2px 1px rgba(0,0,0,0.2);
+    box-shadow: 0 0 2px 1px rgba(0,0,0,0.2);
+}
+
+.grey{
+	background-color: #f8f9f9;
+}
+
+.darkGrey{
+	background-color: #333;
+	color: white;
+	padding: 20px 0px 30px 0px;
+}
+
+.footer .navbar{
+	margin-bottom: 0px;
+	margin-left: -15px;
+}
+
+.footer .navbar>ul>li>a{
+	background-color: transparent !important;
+	color: #fff;
+}
+
+#brand{
+	font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 6px;
+}
+
+.darkGrey h1,
+.contact h2{
+	font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+ 
+    padding-bottom: 15px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.darkGrey h1:after,
+.contact h2:after{
+	content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    background: #fab702;
+    height: 1px;
+}
+
+.map{
+	position: relative;
+}
+
+.map iframe{
+	position: absolute;
+}
+
+
+form#contact{
+	background-color: white;
+	padding: 30px;
+	
+	-webkit-box-shadow: 0 0 2px 1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 0 2px 1px rgba(0,0,0,0.2);
+    box-shadow: 0 0 2px 1px rgba(0,0,0,0.2);
+
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+form.contact input:not([type="submit"]),
+form.contact textarea{
+    width: 100%;
+    padding: 15px 15px;
+    border: 1px solid #eaeaea;
+    background: transparent;
+    margin-bottom: 20px;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    color: #333;
+    font-size: 12px;
+    font-weight: 400 !important;
+
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+form.contact input:focus,
+form.contact textarea:focus{
+	border-color: #fab702;
+}
+
+form.contact input.btn{
+	border-radius: 0px !important;
+	color: #fff;
+	font-weight: 700;
+	letter-spacing: 3;
+	text-transform: uppercase;
+}
+
+.breadcrmbs{
+	float: right;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    margin-top: 25px;
+    padding-right: 15px;
+}
+
+.breadcrmbs a{
+	color: #fff;
+}
+
+.pagetitle h1{
+	margin-bottom: 5px;
+}
+
+.information-list{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	color: #333;
+	font-weight: 500;
+}
+
+.information-list li{
+	border-bottom: 1px solid #dddddd;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+.information-list li span,
+.information-list li a{
+   margin-left: 25px;
+}
+
+@media (max-width: 970px){
+	.navbar-nav>li>a{
+	    padding: 22px 12px;
+	    /* background-color: blue; */
+	}
+	
+	.navbar-brand {
+		padding: 23px 20px;
+	}
+
+	body{
+		padding-top: 65px;
+	}
+
+	#slider h2{
+		font-size: 40px;
+		top: 20%;
+	}
+}
+
+@media (max-width: 750px){
+	.navbar-nav>li>a{
+	    padding: 5px 15px;
+	    /* background-color: red; */
+	}
+
+	.navbar-brand{
+		padding: 15px 15px;
+	}
+
+	body{
+		padding-top: 50px;
+	}
+
+	#intro{
+		margin-top: 30px;
+	}
+
+	.address{
+		margin-left: -15px
+	}
+
+	.breadcrmbs{
+		float: none;
+		text-align: left;
+		padding-left: 15px;
+		margin-top: 15px;
+	}
+
+	#slider h2{
+		font-size: 30px;
+		top: 25%;
+		width: 66%;
+	}
+
+	#slider h2>small{
+		font-size: 15px;	
+		margin-top: 15px;
+	}
+}

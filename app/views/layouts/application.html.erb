@@ -1,14 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>LiakorApp</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>LIAKOR. The Chemical Industry</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  	<%= csrf_meta_tags %>
+  	<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
+	<div id="container">
+		<header class="clearfix">
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+							<span class="sr-only">Toggle navigation</span>
+        						<span class="icon-bar"></span>
+        						<span class="icon-bar"></span>
+        						<span class="icon-bar"></span>
+							</button> 
+
+							<%= link_to "IAKOR", root_path, :class => 'navbar-brand'%>
+					</div>
+					<div class="collapse navbar-collapse" id="menu">
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<%= active_link_to 'Головна', root_path, :active => {:when => :self_only}  %>
+							</li>
+							<li>
+								<%= active_link_to 'Про нас', static_pages_about_path %>
+							</li>
+							<li>
+								<a href="conwisol.html">Conwisol</a>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Liakor 
+									<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="buildLiakor.html">Будівельна хімія</a>
+									</li>
+									<li>
+										<a href="buildLiakor.html">Колоїдна хімія</a>
+									</li>
+									<li>
+										<a href="buildLiakor.html">Побутова хімія</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<%= active_link_to 'Контакти', static_pages_contacts_path %>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			</header>
+		</div>
 
 <%= yield %>
+
+	<div class="container-fluid footer darkGrey">
+			<div class="container">
+				<div class="col-sm-3 col-xs-6">
+					<h1 id="brand"><span class="orangeTxt">L</span>IKOR</h1>
+					<span>Усі права зареєстровані ©</span><br>
+					<span>2000-2016</span>
+				</div>
+				<div class="col-sm-7 col-xs-6">
+					<nav class="navbar">
+						<ul class="nav navbar-nav">
+								<li>
+								<%= active_link_to 'Головна', root_path, :active => {:when => :self_only}  %>
+							</li>
+							<li>
+								<%= active_link_to 'Про нас', static_pages_about_path %>
+							</li>
+								<li>
+									<a href="#">Conwisol</a>
+								</li>
+								<li>
+									<a href="#">Liakor</a>
+								</li>
+								<li>
+									<%= active_link_to 'Контакти', static_pages_contacts_path %>
+								</li>
+							</ul>
+					</nav>
+					<p class="address" style="">
+							02160, Україна, м.Київ,
+							<br>
+							вул. Каунаська, 13, корп. А, оф.2
+							<br>
+							тел. +380 44 384-42-70
+						</p>
+				</div>
+			</div>
+		</div>
+
 
 </body>
 </html>
