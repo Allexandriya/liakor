@@ -18,6 +18,26 @@ body{
 	padding-top: 70px;
 }
 
+/* Sticky Footer */
+ 
+html, body{
+	height: 100%;
+}
+
+#container{
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto;
+	margin-bottom: -200px;
+}
+
+.footer, .push{
+	height: 200px;
+}
+
+/* Main colors */
+
 .orangeTxt,
 .active{
 	color: #fab702 !important;
@@ -27,12 +47,25 @@ body{
 	background-color: #fab702;
 }
 
-.navbar-default{
-	background-color: #fff;
+.grey{
+	background-color: #f8f9f9;
 }
+
+.darkGrey{
+	background-color: #333;
+	color: white;
+	padding: 20px 0px 30px 0px;
+}
+
 
 p.text{
 	color: #5e5e5e;
+}
+
+/* Navbar */
+
+.navbar-default{
+	background-color: #fff;
 }
 
 .navbar-nav>li>a{
@@ -94,6 +127,8 @@ ul.dropdown-menu {
     font-weight: 500;
 }
 
+/* SLIDER IMG */
+
 #slider{
     max-height: 570px;
     height: 400px;
@@ -154,16 +189,6 @@ h4{
     box-shadow: 0 0 2px 1px rgba(0,0,0,0.2);
 }
 
-.grey{
-	background-color: #f8f9f9;
-}
-
-.darkGrey{
-	background-color: #333;
-	color: white;
-	padding: 20px 0px 30px 0px;
-}
-
 .footer .navbar{
 	margin-bottom: 0px;
 	margin-left: -15px;
@@ -179,6 +204,8 @@ h4{
     font-weight: 900;
     letter-spacing: 6px;
 }
+
+/* Headers */
 
 .darkGrey h1,
 .contact h2{
@@ -210,6 +237,7 @@ h4{
 	position: absolute;
 }
 
+/* Forms */
 
 form#contact{
 	background-color: white;
@@ -269,6 +297,8 @@ form.contact input.btn{
 	color: #fff;
 }
 
+/* Page header Title + BreadCrumbs */
+
 .pagetitle h1{
 	margin-bottom: 5px;
 }
@@ -292,6 +322,8 @@ form.contact input.btn{
    margin-left: 25px;
 }
 
+/* Media queries*/
+
 @media (max-width: 970px){
 	.navbar-nav>li>a{
 	    padding: 22px 12px;
@@ -309,6 +341,20 @@ form.contact input.btn{
 	#slider h2{
 		font-size: 40px;
 		top: 20%;
+	}
+
+	#map>*{
+		height: 400px !important;
+	}
+
+	/* Sticky Footer */
+
+	#container{
+		margin-bottom: -250px;
+	}
+
+	.footer, .push{
+		height: 250px;
 	}
 }
 
@@ -350,5 +396,19 @@ form.contact input.btn{
 	#slider h2>small{
 		font-size: 15px;	
 		margin-top: 15px;
+	}
+
+	#map>*{
+		height:  300px !important;
+	}
+
+	/* Sticky Footer */
+
+	#container{
+		margin-bottom: -280px;
+	}
+
+	.footer, .push{
+		height: 280px;
 	}
 }
