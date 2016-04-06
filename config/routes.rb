@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :conwisols
   get 'static_pages/index'
 
   get 'static_pages/about'
