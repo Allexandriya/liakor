@@ -1,0 +1,23 @@
+<div class="container-fluid darkGrey pagetitle">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<h1 class="title">LIAKOR. БУДІВЕЛЬНА ХІМІЯ</h1>
+					</div>
+					<div class="col-sm-6 breadcrmbs">
+				  		<span>Продукція /</span>
+				  		<span class="active">Liakor</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<br/>
+			    <% @products.each do |product| %>
+			       <%= render partial: "products/product", locals: {product: product} %>
+			    <% end %>
+			<br>
+			</div>
+		</div>
+		<br>

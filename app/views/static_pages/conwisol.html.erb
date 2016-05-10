@@ -1,0 +1,23 @@
+<div class="container-fluid darkGrey pagetitle">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<h1 class="title">ДОБАВКИ ДО БЕТОНІВ ТА БУДІВЕЛЬНИХ РОЗЧИНІВ CONWISOL</h1>
+					</div>
+					<div class="col-sm-6 breadcrmbs">
+				  		<a href="#">Продукція /</a>
+				  		<a href="#" class="active">Conwisol</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<br/>
+			    <% @products.each do |product| %>
+			       <%= render partial: "products/product", locals: {product: product} %>
+			    <% end %>
+			<br>
+			</div>
+		</div>
+		<br>

@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+  get 'static_pages/conwisol'
+
+  get 'static_pages/liakorConstruction'
+
+  get 'static_pages/liakorColloid'
+
+  get 'static_pages/liakorHousehold'
+
+  resources :products
   get 'static_pages/index'
 
   get 'static_pages/about'

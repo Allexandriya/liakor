@@ -1,0 +1,9 @@
+<div class="col-sm-4">
+	<%= image_tag(product.image_url, class: "img-responsive") %>
+	<h4><%= product.name %></h4>
+	<p class="text"><%= product.description %></p>
+
+	<!-- <span style="color: #ccc"><%= product.category %></span> -->
+	<%= link_to 'Змінити', edit_product_path(product) %>
+	<%= link_to 'Знищити', product, method: :delete, data: { confirm: 'Are you sure?' } %>
+</div>
